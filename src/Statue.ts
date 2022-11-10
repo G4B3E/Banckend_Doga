@@ -1,14 +1,14 @@
-import {Artwork} from './Artwork_interface'; // importáljuk a köny osztályt a köny intefészből
+import {Artwork} from './Artwork_interface'; 
 
 export class Statue implements Artwork { 
     title: string;
     price: number;
     year : number;
-    size : number;
-    public constructor(title: string, price: number, year : number , size: number) { 
+    height : number;
+    public constructor(title: string, price: number, year : number , height: number) { 
         this.title = title;
         this.price = price;
         this.year = year;
-        this.size = size;
+        this.height = height;
     }
 }
